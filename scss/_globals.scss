@@ -16,43 +16,57 @@ Globals
 }
 
 @font-face {
-  font-family: 'Amatic SC';
+  font-family: 'Limelight';
   font-style: normal;
-  font-weight: 700;
-  src: local('Amatic SC Bold'), local('AmaticSC-Bold'), url(http://fonts.gstatic.com/s/amaticsc/v6/IDnkRTPGcrSVo50UyYNK7xVuXpl7XtNjpLlhhhGlVqc.woff2) format('woff2');
+  font-weight: 400;
+  src: local('Limelight'), url(http://fonts.gstatic.com/s/limelight/v7/kD_2YDkzv1rorNqQ2oFK5oX0hVgzZQUfRDuZrPvH3D8.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 @font-face {
-  font-family: 'Open Sans Condensed';
+  font-family: 'Roboto Condensed';
   font-style: normal;
   font-weight: 300;
-  src: local('Open Sans Cond Light'), local('OpenSans-CondensedLight'), url(http://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xMmDra0ONnO3FPH--kzkC5x_v5H-gcmDugi2HQeB0BPm.woff2) format('woff2');
+  src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'), url(http://fonts.gstatic.com/s/robotocondensed/v12/b9QBgL0iMZfDSpmcXcE8nINoQp_eVBOVIvMuRAF0Yvr2Ot9t5h1GRSTIE78Whtoh.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 @font-face {
-  font-family: 'Source Sans Pro';
+  font-family: 'Roboto Condensed';
   font-style: normal;
-  font-weight: 300;
-  src: local('Source Sans Pro Light'), local('SourceSansPro-Light'), url(http://fonts.gstatic.com/s/sourcesanspro/v9/toadOcfmlt9b38dHJxOBGN5zCZmJHbPt3vUI1beFfvf3rGVtsTkPsbDajuO5ueQw.woff2) format('woff2');
+  font-weight: 400;
+  src: local('Roboto Condensed Regular'), local('RobotoCondensed-Regular'), url(http://fonts.gstatic.com/s/robotocondensed/v12/Zd2E9abXLFGSr9G3YK2MsDxLuRQ_bge_q3c2bYpk9Dw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+@font-face {
+  font-family: 'Sansita One';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sansita One'), local('SansitaOne'), url(http://fonts.gstatic.com/s/sansitaone/v6/r0cFg_5MCCA0Wi4i7AgXWJQV2lvL5Ba9FjAYK6Lx0Qk.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
 }
 
 @mixin body-font-regular {
-    font-family: 'Open Sans Condensed', georgia, serif;
-    font-style: normal;
-    font-weight: 300;
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 300;  
 }
 
-@mixin body-font-bold {
-    font-family: 'Open Sans Condensed', georgia, serif;
-    font-style: normal;
-    font-weight: 700;
+@mixin list-font {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: 400;   
 }
 
 @mixin headline-font {
-    font-family: 'Amatic SC', helvetica, verdana, sans-serif;
-    font-style: normal;
-    font-weight: 700;
+  font-family: 'Limelight';
+  font-style: normal;
+  font-weight: 400; 
+}
+
+@mixin heading-font {
+  font-family: 'Sansita One';
+  font-style: normal;
+  font-weight: 400;    
 }
