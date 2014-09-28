@@ -2,16 +2,13 @@
 Base Rules
 	A Base rule is applied to an element using an element selector, a descendent selector, or a child selector, along with any pseudoclasses. It doesn’t include any class or ID selectors. It is defining the default styling for how that element should look in all occurrences on the page.
 */
+
 html {
     box-sizing: border-box;
 }
 
-*, *:before, *:after {
-    box-sizing: inherit;
-}
-
 body {
-    background-color: rgba(193, 253, 239, 0.37);
+    background-color: #fff;
     @include body-font-regular;
     @include fontSize(14px);
     line-height: 1.4;
@@ -21,10 +18,14 @@ body {
     width: 100%;
 }
 
-img {
-    height: auto;
-    max-width: 100%;
-    //margin: 0;
+
+
+header h1 {
+    background-color: $background-color;
+    margin-top: auto;
+    padding-top: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h1 {
@@ -38,6 +39,8 @@ h1 {
 }
 
 header h2 {
+    background-color: $background-color;
+    color: #fff;
     @include fontSize(30px);
     text-align: center;
     margin-top: 0;
@@ -45,12 +48,23 @@ header h2 {
 }
 
 h2, h3 {
+    color: $background-color;
     @include heading-font;
     @include fontSize(25px);
     border-bottom: 1.5px #000 solid;
     line-height: 1;
     margin: auto;
     padding: 10px;
+}
+
+a {
+    color: rgba(2, 75, 67, 0.37);
+    @include list-font;
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(118, 132, 131, 0.37);
 }
 
 ul {
@@ -60,17 +74,25 @@ ul {
 }
 
 ul li {
-    @include list-font;
+    @include body-font-regular;
     list-style: circle;
     line-height: 2;
     margin: 0 6px 0 0;
 }
 
 blockquote {
-    background-color: #fff;
-    padding: 80px;
+    @include list-font;
+    background-color: rgba(88, 177, 170, 0.37);
+    color: #fff;
+    margin: 0;
+    padding: 40px;
     text-align: center;
 }
+
+blockquote cite {
+    display: block;
+}
+
 
 footer {
     border-top: 1px #000 solid;
