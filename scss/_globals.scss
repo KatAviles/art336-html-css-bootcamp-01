@@ -48,13 +48,13 @@ Globals
 }
 
 @mixin body-font-regular {
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Condensed', Verdana, sans-serif;
   font-style: normal;
   font-weight: 300;  
 }
 
 @mixin list-font {
-  font-family: 'Roboto Condensed';
+  font-family: 'Roboto Condensed' Verdana, sans-serif;
   font-style: normal;
   font-weight: 400;   
 }
